@@ -1,11 +1,24 @@
 # DATA6250project
 
+<img width="1095" alt="Untitled" src="https://user-images.githubusercontent.com/120329214/232910479-69b027ad-8da7-4ae9-9d0d-d7400cbe664b.png">
+
+<img width="1073" alt="Screenshot 2023-04-18 at 5 36 45 PM" src="https://user-images.githubusercontent.com/120329214/232910750-4fb67d1b-e75a-4158-b11e-484025f1188f.png">
+
+<img width="1088" alt="Screenshot 2023-04-18 at 5 37 54 PM" src="https://user-images.githubusercontent.com/120329214/232910918-44b113d5-2ef0-4af9-9366-e805238e4c8b.png">
+
+<img width="1079" alt="Screenshot 2023-04-18 at 5 41 47 PM" src="https://user-images.githubusercontent.com/120329214/232911605-c1a07824-c544-4077-86a3-82199dadd3f2.png">
+
+<img width="787" alt="Screenshot 2023-04-18 at 5 42 56 PM" src="https://user-images.githubusercontent.com/120329214/232911813-81264daa-6960-4737-927e-0c44953be024.png">
+
+<img width="1018" alt="Screenshot 2023-04-18 at 5 44 28 PM" src="https://user-images.githubusercontent.com/120329214/232912043-ef178313-8913-47b1-80b9-ddec342b44dd.png">
 
 <img width="1181" alt="Screenshot 2023-04-18 at 5 26 05 PM" src="https://user-images.githubusercontent.com/120329214/232908801-7a82c12c-adf3-41f3-91da-5c1121c72e83.png">
 
 Baseline:
 
 The models I decided to use in my experiments were ridge regression, decision tree regressor, and a linear SVR. I performed grid search cv to find the best parameters for each model, but I ran into some difficulties along the way. The first problem was the duration of time it took to run, specifically with the SVR model. The way I worked around this was to import LinearSVR instead of using SVR with the kernel set to linear. SVMs scale pretty badly when it comes to large datasets, so it is more efficient to use the specific linear SVR. The decision tree regressor took a good bit of time to fit when using grid search CV, so I reduced the number of parameters I would test for. As a result, the highest performing parameters always overfit the data. When I would try a different combination of parameter choices, it would still overfit. The ridge model also suffered similar problems. With gridsearch CV, when I would test out different alphas with different solvers, the model would never converge and would take hours to run. I had to reduce the type of parameters I tested by a lot.
+
+The way I chose to evaluate the performance of each model was to use mean squared error on both the test and training data. the MSE will tell us the average squared difference between the true and predicted y values.
 
 Experiment 1:
 
