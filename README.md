@@ -1,5 +1,8 @@
 # DATA6250project
 
+
+<img width="1181" alt="Screenshot 2023-04-18 at 5 26 05 PM" src="https://user-images.githubusercontent.com/120329214/232908801-7a82c12c-adf3-41f3-91da-5c1121c72e83.png">
+
 Baseline:
 
 The models I decided to use in my experiments were ridge regression, decision tree regressor, and a linear SVR. I performed grid search cv to find the best parameters for each model, but I ran into some difficulties along the way. The first problem was the duration of time it took to run, specifically with the SVR model. The way I worked around this was to import LinearSVR instead of using SVR with the kernel set to linear. SVMs scale pretty badly when it comes to large datasets, so it is more efficient to use the specific linear SVR. The decision tree regressor took a good bit of time to fit when using grid search CV, so I reduced the number of parameters I would test for. As a result, the highest performing parameters always overfit the data. When I would try a different combination of parameter choices, it would still overfit. The ridge model also suffered similar problems. With gridsearch CV, when I would test out different alphas with different solvers, the model would never converge and would take hours to run. I had to reduce the type of parameters I tested by a lot.
