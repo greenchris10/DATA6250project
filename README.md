@@ -4,6 +4,8 @@ For my project, I will be utilizing a dataset from kaggle. It has information ab
 
 <img width="1095" alt="Untitled" src="https://user-images.githubusercontent.com/120329214/232910479-69b027ad-8da7-4ae9-9d0d-d7400cbe664b.png">
 
+The picture below shows the distribution of the price column. We can see that a good majority of the trips cost below $20 which is pretty surprising. I think the data is from 2018 so the prices don't reflect current day prices.
+
 <img width="430" alt="Screenshot 2023-04-18 at 6 35 01 PM" src="https://user-images.githubusercontent.com/120329214/232919771-d40fa350-0e6a-4a2a-8a10-249ab2991c87.png">
 
 <img width="1073" alt="Screenshot 2023-04-18 at 5 36 45 PM" src="https://user-images.githubusercontent.com/120329214/232910750-4fb67d1b-e75a-4158-b11e-484025f1188f.png">
@@ -18,7 +20,8 @@ Price has a strong positive correlation with distance and surge_multiplier. Ther
 
 <img width="1018" alt="Screenshot 2023-04-18 at 5 44 28 PM" src="https://user-images.githubusercontent.com/120329214/232912043-ef178313-8913-47b1-80b9-ddec342b44dd.png">
 
-<img width="1181" alt="Screenshot 2023-04-18 at 5 26 05 PM" src="https://user-images.githubusercontent.com/120329214/232908801-7a82c12c-adf3-41f3-91da-5c1121c72e83.png">
+<img width="1322" alt="Screenshot 2023-04-19 at 1 12 46 PM" src="https://user-images.githubusercontent.com/120329214/233150103-eb2b8883-a7c5-41ca-91f1-a9c335f8e1f2.png">
+
 
 Baseline:
 
