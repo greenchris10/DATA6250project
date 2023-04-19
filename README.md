@@ -1,6 +1,6 @@
 # DATA6250project
 
-For my project, I will be utilizing a dataset from kaggle. It has information about 55 thousand uber and lyft rides throughout different areas in Boston. The dataset contains 57 columns mostly composed of categorical features. Prior to performing the experiments I spent a lot of time dropping irrelavant columns so that the data would be eaiser to work with.
+For my project, I will be utilizing a dataset from kaggle (https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma/code?resource=download). It has information about 55 thousand uber and lyft rides throughout different areas in Boston. The dataset contains 57 columns mostly composed of categorical features. Prior to performing the experiments I spent a lot of time dropping irrelavant columns so that the data would be eaiser to work with.
 
 <img width="1095" alt="Untitled" src="https://user-images.githubusercontent.com/120329214/232910479-69b027ad-8da7-4ae9-9d0d-d7400cbe664b.png">
 
