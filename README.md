@@ -1,5 +1,7 @@
 # DATA6250project
 
+For my project, I will be utilizing a dataset from kaggle. It has information about 55 thousand uber and lyft rides throughout different areas in Boston. The dataset contains 57 columns mostly composed of categorical features. Prior to performing the experiments I spent a lot of time dropping irrelavant columns so that the data would be eaiser to work with.
+
 <img width="1095" alt="Untitled" src="https://user-images.githubusercontent.com/120329214/232910479-69b027ad-8da7-4ae9-9d0d-d7400cbe664b.png">
 
 <img width="430" alt="Screenshot 2023-04-18 at 6 35 01 PM" src="https://user-images.githubusercontent.com/120329214/232919771-d40fa350-0e6a-4a2a-8a10-249ab2991c87.png">
@@ -42,4 +44,9 @@ I only applied the standard scaler transformation to the two numerical columns i
 
 Experiment 5:
 
+When trying to determine the most important features, I had difficultiy interpreting the importance scores for my categorical columns. Since they were one hot encoded, I was unable to figure out which score corresponded with each feature prior to one hot encoding. I was able to see that surge multiplier was more important than distance which I found surprising. There were some categorical features that had the highest importance scores. I believe they corresponded to the source and destination features but I wasn't able to completely confirm that. The performance of the models in this experiment wasn't great at all. The only model that performed ok (with respect to the other experiments) was the decision tree. Prior to training the model, I applied the standard scalar transformation to the random columns that got added. Since the random columns had values between 100 and 200, but my other numerical columns were single digits, I believed applying this transformation was necessary. 
+
+Conclusion:
+
+Based on the 5 experiments I ran, I'd have to reccomend the ridge-regression model used in experiment 2. Adding the polynomial features to my feature matrix resulted in the best MSE and r2 score.
 
